@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lokacije kanti za reciklažu</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+</head>
+<body>
+<div id="map">
+	
+</div>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+<script> 
+
+
+let mapOptions = {
+    center:[43.3530,17.8023],
+    zoom:14
+}
+
+
+let map = new L.map('map' , mapOptions);
+
+let layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+map.addLayer(layer);
+
+
+let marker = new L.Marker([43.34676,17.79703]);
+let marker2 = new L.Marker([43.34589,17.79972]);
+let marker3 = new L.Marker([43.36122,17.80364]);
+let marker4 = new L.Marker([43.36427,17.82202]);
+let marker5 = new L.Marker([43.34540,17.78873]);
+let marker6 = new L.Marker([43.34228,17.81196]);
+let marker7 = new L.Marker([43.34313,17.80250]);
+let marker8 = new L.Marker([43.34248,17.80423]);
+let marker9 = new L.Marker([43.35023,17.80342]);
+let marker10 = new L.Marker([43.35102,17.78224]);
+marker.addTo(map);
+marker2.addTo(map);
+marker3.addTo(map);
+marker4.addTo(map);
+marker5.addTo(map);
+marker6.addTo(map);
+marker7.addTo(map);
+marker8.addTo(map);
+marker9.addTo(map);
+marker10.addTo(map);
+
+
+</script>
+
+</body>
+</html>

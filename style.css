@@ -1,0 +1,878 @@
+html{
+       scroll-behavior: smooth;
+       scroll-padding-top: 90px;
+       cursor:url("stemlogoekologija.png"), auto;
+    }
+	body{ 
+	margin:0px;
+  padding: 0;
+  overflow-x: hidden;
+}
+#menu{
+	height: 100px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+
+}
+.logo{
+	width: 100px;
+	height: auto;
+	position: absolute;
+	cursor: pointer;
+	border-color: #fff;
+	border-width: 1px;
+	margin-left: 20px;
+
+
+}
+.logo:hover{
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌳</text></svg>") 16 0,auto; 
+}
+
+.banner{
+	min-width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+.parralax{
+	 background-image: url("bannerstem.jpg");
+		background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 725px; 
+  width: 100%;
+	height: auto;
+
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  background: #fff;
+/*background: rgb(255,255,255);
+background: linear-gradient(160deg, rgba(255,255,255,1) 41%, rgba(57,194,108,0.6982143199076505) 90%);*/
+}
+.air{
+position: absolute;
+left: 350px;
+top: 25px;
+}
+.airmobile{
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.airmobile2{
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.naslov{
+	position: relative;
+left: 150px;
+top: 17px;
+}
+.lista{
+	float: right;
+	text-decoration: none;
+	list-style-type: none;
+	position: relative;
+	right: 50px;
+	top: -42px;
+}
+.lista a li {
+	display: inline;
+	padding: 10px 20px;
+  color: #000;
+}
+.hamburger{
+	display: none;
+}
+
+
+/*
+#pocetna:hover{
+background: rgb(57,194,108);
+background: linear-gradient(160deg, rgba(57,194,108,0.8690826672465861) 28%, rgba(13,131,226,0.8634804263502276) 95%);
+border-radius: 11px;
+}
+#ekologija:hover{
+background: rgb(57,194,108);
+background: linear-gradient(160deg, rgba(57,194,108,0.8690826672465861) 28%, rgba(13,131,226,0.8634804263502276) 95%);
+border-radius: 11px;
+}
+
+.pocetna{
+  background: rgb(57,194,108);
+background: linear-gradient(120deg, rgba(57,194,108,0.5) 28%, rgba(13,131,226,0.5) 95%);
+border-radius: 11px;
+}
+*/
+.lista a {
+	text-decoration: none;
+}
+svg{
+	width: 20px;
+	height: auto;
+position: relative;
+top: -30px;
+right: -320px;
+  cursor: pointer;
+}
+.typing {
+    width: 25ch;
+    animation: typing 6s steps(25), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    margin: 0 auto;
+    position: relative;
+    top: 350px;
+    z-index: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+.text{
+  margin: 0 auto;
+}
+
+
+.mainbg{
+background: rgb(13,131,226);
+background: linear-gradient(0deg, rgba(13,131,226,1) 28%, rgba(57,194,108,1) 64%);
+background-size: cover;
+width: 100%;
+ /* Veličina main-a*/
+}
+.main{
+  background: rgba(255,255,255,0.3);
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  
+}
+
+.maintext{
+  text-align: center;
+  position: relative;
+  top: 100px;
+  font-size: 24px;
+  max-width: 98%;
+  margin: 0 auto;
+  padding: 0 20px;
+  top: 20px;
+ 
+}
+.mainnaslov{
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 40px;
+top: 5px;
+}
+.footerbg{
+  background: rgb(13,131,226);
+background: linear-gradient(0deg, rgba(13,131,226,1) 28%, rgba(57,194,108,1) 45%);
+background-size: cover;
+width: 100%;
+height: 275px;
+}
+.footer{
+background: #fff;
+width: 98%;
+height: 185px;
+margin: 0 auto;
+position: relative;
+bottom: -75px;
+font-size: 18px;
+border-radius: 10px;
+}
+
+.fb2{
+  width: 150px;
+  height: auto;
+  position: relative;
+  left: 145px;
+  top: 10px;
+}
+.ig2{
+  width: 150px;
+  height: auto;
+  position: relative;
+  left: -10px;
+  top: 130px;
+}
+.tw2{
+  float: right;
+  width: 150px;
+  height: auto;
+  position: relative;
+  top: -127px;
+  right: 150px;
+}
+.www2{
+  float: right;
+  width: 150px;
+  height: auto;
+  position: relative;
+  top: -4px;
+}
+.qrcode{
+max-width: 150px;
+}
+.middle{
+  margin: -60px auto;
+  text-align: center;
+}
+.middlep{
+  margin-top: 0px;
+}
+.middlep a{
+  text-decoration: none;
+}
+.tooltip {
+    position: relative;
+    border-bottom: 1px solid #fff;
+}
+
+.tooltip:before {
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 200px;
+    background-color: #0d83e2;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.2;
+    border-radius: 5px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .6s;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -110px;
+    font-size: 16px;
+    visibility: hidden;
+    transition: .5s ease;
+}
+
+.tooltip:after {
+    content: "";
+    position: absolute;
+    bottom: 75%;
+    left: 50%;
+    top: -9px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    opacity: 0;
+    transition: opacity .6s;
+    border-color: #fff transparent transparent transparent;
+    visibility: hidden;
+}
+
+.tooltip:hover:before, .tooltip:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+.sticky{
+  transition: .6s ease;
+  border-radius: 0 0 10px 10px;
+}
+#menu{
+  transition: .6s ease;
+}
+.zrak{
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.airicon{
+  display: none;
+}
+.hmeni{
+	display: none;
+}
+
+
+
+.mainbg2{
+  background: rgb(13,131,226);
+background: linear-gradient(0deg, rgba(57,194,108,1) 28%, rgba(13,131,226,1) 64%);
+}
+.mainbg3{
+  background: rgb(13,131,226);
+background: linear-gradient(0deg, rgba(13,131,226,1) 28%, rgba(57,194,108,1) 64%);
+}
+.mainbg4{
+  background: rgb(13,131,226);
+background: linear-gradient(0deg, rgba(57,194,108,1) 28%, rgba(13,131,226,1) 64%);
+}
+
+
+/* Responsive2 */
+@media only screen and (max-width: 1300px) {
+.lista a li{
+  padding: 4px 8px;
+}
+
+}
+@media only screen and (max-width: 1300px) {
+.lista a li{
+  
+}
+#menu{
+  
+}
+
+}
+@media only screen and (max-width: 1140px) {
+.maintext{
+  font-size: 18px;
+}
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1420px) {
+
+.lista a li{
+  padding: 8px 16px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+
+
+.lista a li{
+  padding: 6px 12px;
+  }
+}
+
+
+@media only screen and (max-width: 1330px) {
+.lista a li{
+  padding: auto 110px;
+  }
+}
+@media only screen and (max-width: 1290px) {
+.lista{
+
+  }
+.air{
+}
+svg{
+}
+}
+
+@media only screen and (max-width: 1218px) {
+
+.lista a li{
+  padding: auto 2px;
+  }
+}
+
+
+
+@media only screen and (max-width: 1245px) {
+  #menu{
+height: 100px;
+  }
+.air{
+  float: left;
+  position:absolute;
+  top: 47px;
+  left: 150px;
+
+}
+.naslov{
+  float: left;
+  position: absolute;
+  top: 0px;
+  left: 120px;
+  
+}
+.logo{
+  position: relative;
+  left: -10px;
+  width: 100px;
+  height: auto;
+}
+svg{
+  position: absolute;
+top: 60px;
+left: 122px;
+}
+.lista{
+	display: none;
+}
+.hmeni {
+	display: block;
+	float: right;
+	width: 50px;
+	height: auto;
+	position: relative;
+	top: 20px;
+	right: 10px;
+}
+}
+
+@media only screen and (max-width: 490px) {
+
+#menu{
+	
+	display: block;
+	position: fixed;
+	height: 90px;
+}
+.logo{
+	width: 40px;
+	height: auto;
+	position: absolute;
+	left: -10px;
+	top: 5px;
+}
+.naslov{
+	font-size: 18px;
+	max-width: 20%;
+	position: relative;
+	left: 60px;
+	top: 0px;
+}
+svg{
+	position: absolute;
+	left: 10px;
+	top: 55px;
+}
+.air{
+	position: absolute;
+	left: 40px;
+	top: 45px;
+}
+.hmeni{
+	display: block;
+	width: 40px;
+	height: auto;
+position: absolute;
+right: 10px;
+top: 5px;
+}
+
+
+.lista{
+	display: none;
+}
+
+.sticky{
+
+}
+.typing {
+    width: 25ch;
+    animation: typing 6s steps(25), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+    z-index: 0;
+    color: #fff;
+    font-size: 15px;
+    left: 7px;
+}
+.mainbg{
+ max-width: 100%;
+}
+
+
+
+
+.mainbg{
+background: rgb(13,131,226);
+background: linear-gradient(0deg, rgba(13,131,226,1) 28%, rgba(57,194,108,1) 64%);
+background-size: cover;
+width: 100%;
+ /* Veličina main-a*/
+}
+.main{
+  background: rgba(255,255,255,0.3);
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  
+}
+
+.maintext{
+  text-align: center;
+  position: relative;
+  top: 100px;
+  font-size: 12px;
+  max-width: 98%;
+  margin: 0 auto;
+  padding: 0 20px;
+  top: 10px;
+ 
+}
+.mainnaslov{
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 0px;
+}
+.slika{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 30px;
+}
+
+
+
+.mainbg2{
+  background: rgb(13,131,226);
+background: linear-gradient(0deg, rgba(57,194,108,1) 28%, rgba(13,131,226,1) 64%);
+}
+.mainbg3{
+  background: rgb(13,131,226);
+background: linear-gradient(0deg, rgba(13,131,226,1) 28%, rgba(57,194,108,1) 64%);
+}
+.mainbg4{
+  background: rgb(13,131,226);
+background: linear-gradient(0deg, rgba(57,194,108,1) 28%, rgba(13,131,226,1) 64%);
+}
+
+
+
+.section {
+    scroll-snap-align: center;
+    height: 85vh;
+    padding: 10px 0;
+    position: relative;
+    
+}
+.main5{
+  
+}
+
+
+
+
+}
+
+@media only screen and (max-width: 350px) {
+.air{
+	font-size: 13px;
+	position: absolute;
+	top: 48px;
+}
+svg{
+	position: absolute;
+	top: 55px;
+}
+.hmeni{
+	width: 35px;
+	height: auto;
+	position: absolute;
+	right: 10px;
+}
+#menu{
+	height: 90px;
+}
+}
+
+@media only screen and (max-width: 245px) {
+.naslov{
+	font-size: 14px;
+	position: relative;
+	top: 5px;
+}
+.air{
+	position: absolute;
+	top: 47px;
+	max-width: 150px;
+}
+.hmeni{
+	width: 30px;
+	height: auto;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.typing{
+	position: absolute;
+	right: 3px;
+	top: 320px;
+	font-size: 12px;
+}
+}
+
+@media only screen and (max-width: 190px) {
+
+.hmeni{
+	width: 20px;
+	height: auto;
+	position: absolute;
+	top: 15px;
+	right: 5px;
+}
+.listamob{
+float: right;
+
+
+}
+
+}
+
+
+.section {
+    scroll-snap-align: center;
+    height: 85vh;
+    padding: 10px 0;
+    position: relative;
+    
+}
+.video{
+  width: 400px;
+  height: auto;
+  position: absolute;
+  bottom: 20px;
+ left: 555px;
+
+}
+.naslov{
+cursor:url('logocursor.png'), auto;
+
+}
+.main5{
+  height: 83.7vh;
+}
+.mobileheader{
+	display: none;
+}
+
+
+
+
+@media only screen and (max-width: 1245px) {
+.listamob{
+	list-style-type: none;
+	position: fixed;
+	background: rgba(13,131,226,0.5);
+background: linear-gradient(0deg, rgba(13,131,226,0.8) 35%, rgba(57,194,108,0.8) 55%);
+background-size: cover;
+width: 100%;
+z-index: 200;
+height: 100vh;
+top: -15px;
+}
+.listamob a{
+	text-decoration: none;
+}
+.listamob a li{
+	color: #000;
+  display: block;
+text-align: center;
+font-size: 24px;
+padding: 15px;
+max-width: 150px;
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  left: -30px;
+  top: 100px;
+ 
+}
+.hamburger{
+display: none;
+
+}
+.menuclose{
+	width: 22px;
+	height: auto;
+	position: absolute;
+	right: 50px;
+	top: 23px;
+	
+
+}
+.bmenu b{
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  left: -18px;
+max-width: 100px;
+font-size: 28px;
+
+}
+}
+.pocetna{
+background:rgb(57,194,108);
+background:linear-gradient(120deg, rgba(57,194,108,0.5) 28%, rgba(13,131,226,0.5) 95%);
+border-radius:11px;
+}
+.fb{
+	width: 50px;
+	height: auto;
+	position: absolute;
+	left: 20px;
+	top: 15px;
+}
+.ig{
+	width: 55px;
+	height: auto;
+	position: absolute;
+	left: 20px;
+	bottom: 15px;
+}
+
+
+.tw{
+	width: 60px;
+	height: auto;
+	position: absolute;
+	right: 20px;
+	top: 11px;
+}
+.www{
+	width: 50px;
+	height: auto;
+	position: absolute;
+	right: 20px;
+	bottom: 15px;
+}
+.textfb{
+position: absolute;
+left: 80px;
+top: 10px;
+}
+.textig{
+	position: absolute;
+left: 80px;
+bottom: 14px;
+}
+
+.texttwt{
+	position: absolute;
+right: 80px;
+top: 15px;
+}
+
+.textwww{
+	position: absolute;
+right: 80px;
+bottom: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+.qrcode{
+	height: auto;
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  position: relative;
+  top: 30px;
+}
+.middlep{
+	font-size: 12px;
+	position: relative;
+	top: 35px;
+}
+.textfb{
+	display: none;
+}
+.textig{
+	display: none;
+}
+.texttwt{
+	display: none;
+}
+.textwww{
+	display: none;
+}
+}
+@media only screen and (max-width: 320px) {
+.fb{
+width: 40px;
+height: auto;
+}
+.ig{
+width: 40px;
+height: auto;
+}
+.tw{
+width: 40px;
+height: auto;
+}
+.www{
+width: 40px;
+height: auto;
+}
+
+}
+@media only screen and (max-width: 260px) {
+.fb{
+width: 30px;
+height: auto;
+}
+.ig{
+width: 30px;
+height: auto;
+}
+.tw{
+width: 30px;
+height: auto;
+}
+.www{
+width: 30px;
+height: auto;
+}
+.qrcode{
+	width: 50px;
+	height: auto;
+	position: relative;
+	top: 60px;
+}
+.middlep{
+	font-size: 10px;
+	position: relative;
+	top: 65px;
+}
+
+}
+.slika{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: auto;
+  margin-top: 60px;
+}
+
+#map{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
